@@ -16,9 +16,15 @@
             font-family: 'Roboto', sans-serif;
             background-color: #0d0d0d;
             color: #00ff00;
+            overflow-x: hidden;
             background-image: url('https://images.unsplash.com/photo-1547317058-fc36ec7e6aa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGN5YmVycHVuayUyMGJhY2tncm91bmR8fDB8fHx8MTYyNzgyNzA4NA&ixlib=rb-1.2.1&q=80&w=1080');
             background-size: cover;
             background-blend-mode: multiply;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
         }
 
         .content {
@@ -28,8 +34,6 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px #00ff00;
-            position: relative;
-            z-index: 1;
         }
 
         .profile-img {
@@ -78,7 +82,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: 0;
             pointer-events: none;
         }
     </style>
@@ -87,71 +91,73 @@
 
 <body>
     <canvas id="matrix"></canvas>
-    <div id="__next" class="container mt-5">
-        <div class="text-center mb-5">
-            <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
-                class="profile-img mx-auto d-block" src="cyber.jpeg" />
-            <h1 class="text-4xl font-weight-bold mt-3">Héric Moura</h1>
-            <nav class="navbar navbar-expand-lg navbar-dark mt-3">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/me">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/me/videos.html">Videos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/me/portuguese.html">Português</a>
+    <div class="content-wrapper">
+        <div id="__next" class="container mt-5">
+            <div class="text-center mb-5">
+                <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
+                    class="profile-img mx-auto d-block" src="cyber.jpeg" />
+                <h1 class="text-4xl font-weight-bold mt-3">Héric Moura</h1>
+                <nav class="navbar navbar-expand-lg navbar-dark mt-3">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/me">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/me/videos.html">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/me/portuguese.html">Português</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="content">
+                <p>Sou um simples estudante de Serviço Social e resido nas ruas sujas de Santos, Brasil. Mas o que poucons sabem é que, sou também um hacker que se apresenta pelo nome de Werá Popyguá, um programador em Python. Sou um perigoso defensor do código aberto, da liberdade digital, da revolução ecológica e do uso do poder da tecnologia e desobediência civil para impulsionar mudanças sociais. Minha missão é unir os mundos digital e natural, enfrentado as classes dominantes através do código, do ativismo — e até mesmo pelo ecoterrorismo, se necessário.</p>
+
+                <div class="mt-5">
+                    <h2 class="font-weight-bold">Certificações:</h2>
+                    <ul>
+                        <li>
+                            <a class="certification-link font-weight-bold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">CS50's Introduction to Programming with Python, Harvard University</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
 
-        <div class="content">
-            <p>Sou Héric Moura, também conhecido pelo meu nome indígena Werá Popyguá, um programador em Python e estudante de Serviço Social na Universidade Federal de São Paulo (UNIFESP), resido nas ruas sujas de Santos, Brasil. Sou um perigoso defensor do código aberto, da liberdade digital, da revolução ecológica e do uso do poder da tecnologia e desobediência civil para impulsionar mudanças sociais. Minha missão é unir os mundos digital e natural, enfrentado as classes dominantes através do código, do ativismo — e até mesmo pelo ecoterrorismo, se necessário.</p>
-            
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Certificações:</h2>
-                <ul>
-                    <li>
-                        <a class="certification-link font-weight-bold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">CS50's Introduction to Programming with Python, Harvard University</a>
-                    </li>
-                </ul>
-            </div>
+                <div class="mt-5">
+                    <h2 class="font-weight-bold">Projetos</h2>
+                    <ul>
+                        <li>Desenvolvi <a class="project-link font-weight-bold" href="https://github.com/hericmr/El-Vigilante">El Vigilante</a>, uma aplicação que permite aos usuários visualizar feeds de câmeras em tempo real de locais selecionados em Santos, Brasil. Este aplicativo baseado em Python aproveita as câmeras públicas fornecidas pelo governo da cidade de Santos para uma vigilância virtual.</li>
+                        <li>Contribuí para vários posts no blog do <a class="project-link font-weight-bold" href="https://www.jornalsantista.com.br">Jornal Santista</a>, abordando questões sociais como Direitos Humanos, Questões Indígenas, Meio Ambiente e Desigualdade Social.</li>
+                    </ul>
+                </div>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Projetos</h2>
-                <ul>
-                    <li>Desenvolvi <a class="project-link font-weight-bold" href="https://github.com/hericmr/El-Vigilante">El Vigilante</a>, uma aplicação que permite aos usuários visualizar feeds de câmeras em tempo real de locais selecionados em Santos, Brasil. Este aplicativo baseado em Python aproveita as câmeras públicas fornecidas pelo governo da cidade de Santos para uma vigilância virtual.</li>
-                    <li>Contribuí para vários posts no blog do <a class="project-link font-weight-bold" href="https://www.jornalsantista.com.br">Jornal Santista</a>, abordando questões sociais como Direitos Humanos, Questões Indígenas, Meio Ambiente e Desigualdade Social.</li>
-                </ul>
-            </div>
+                <div class="mt-5">
+                    <h2 class="font-weight-bold">Formação</h2>
+                    <ul>
+                        <li>Finalizando meus estudos em Serviço Social na UNIFESP.</li>
+                    </ul>
+                </div>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Formação</h2>
-                <ul>
-                    <li>Finalizando meus estudos em Serviço Social na UNIFESP.</li>
-                </ul>
-            </div>
+                <div class="mt-5">
+                    <h2 class="font-weight-bold">Artigos</h2>
+                    <p>Confira em <a href="https://hericmr.github.io/miseria_da_ontologia/">https://hericmr.github.io/miseria_da_ontologia/</a></p>
+                </div>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Artigos</h2>
-                <p>Confira em <a href="https://hericmr.github.io/miseria_da_ontologia/">https://hericmr.github.io/miseria_da_ontologia/</a></p>
-            </div>
+                <div class="mt-5">
+                    <h2 class="font-weight-bold">🛠️ Ferramentas que já usei:</h2>
+                    <ul>
+                        <li> Python</li>
+                        <li> Django</li>
+                        <li> OpenCV</li>
+                    </ul>
+                </div>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">🛠️ Ferramentas que já usei:</h2>
-                <ul>
-                    <li> Python</li>
-                    <li> Django</li>
-                    <li> OpenCV</li>
-                </ul>
-            </div>
-
-            <div class="mt-5">
-                <p>📧 Sinta-se à vontade para se conectar comigo em <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
+                <div class="mt-5">
+                    <p>📧 Sinta-se à vontade para se conectar comigo em <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
+                </div>
             </div>
         </div>
     </div>
