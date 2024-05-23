@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Héric Moura</title>
 
     <!-- Bootstrap CSS -->
@@ -20,6 +19,8 @@
             background-image: url('https://images.unsplash.com/photo-1547317058-fc36ec7e6aa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGN5YmVycHVuayUyMGJhY2tncm91bmR8fDB8fHx8MTYyNzgyNzA4NA&ixlib=rb-1.2.1&q=80&w=1080');
             background-size: cover;
             background-blend-mode: multiply;
+            margin: 0;
+            padding: 0;
         }
 
         .content-wrapper {
@@ -30,7 +31,7 @@
 
         .content {
             max-width: 750px;
-            margin: 0 auto;
+            margin: 20px auto; /* Adjust the margin here */
             background: rgba(0, 0, 0, 0.85); /* Increased opacity for darker background */
             padding: 20px;
             border-radius: 10px;
@@ -87,16 +88,14 @@
             pointer-events: none;
         }
     </style>
-
 </head>
 
 <body>
-    <canvas id="matrix"></canvas>
+    <canvas id="matrix" width="1366" height="656"></canvas>
     <div class="content-wrapper">
-        <div id="__next" class="container mt-5">
+        <div id="__next" class="container">
             <div class="text-center mb-5">
-                <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
-                    class="profile-img mx-auto d-block" src="cyber.jpeg" />
+                <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1" class="profile-img mx-auto d-block" src="cyber.jpeg">
                 <h1 class="text-4xl font-weight-bold mt-3">Héric Moura</h1>
                 <nav class="navbar navbar-expand-lg navbar-dark mt-3">
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -116,27 +115,28 @@
             </div>
 
             <div class="content">
-                <div class="mt-5">
-                      <p class="font-weight-bold">Identidade Civil:</p>
-                      Nome: Héric Moura<br>
-                      Ocupação: Estudante de Serviço Social<br>
-                      Localização: Santos, Brasil<br>
-                      <br>
-                      <p class="font-weight-bold">Identidade hacker:</p>
-                      Nome de Guerra: W3rá popygu@<br>
-                      Habilidades: Python, Django, OpenCV<br>
-                      Objetivos: Revolução Ecológica e Justiça Social através do Hacking<br>
-                      <br>
-                    </div>
-                 <p class="font-weight-bold">Resumo:</p>
-                  <br>
-                  Sou um estudante de Serviço Social que caminha pelas ruas sujas de Santos, Brasil. À noite, transformo-me em W3rá popygu@, um hacker habilidoso em Python, atormentado por uma luta interna e uma missão implacável. Sou um perigoso defensor do código aberto, da liberdade digital e da revolução ecológica. Uso o poder da tecnologia e da desobediência civil para impulsionar a revolução.<br>
-                  <br>
-                <p></p>Em um passado distante de militância política, fui processado por um perigoso político corrupto da região. Após anos de reclusão, decidi lutar através do anonimato virtual. Desde então, já alterei as senhas de outro político corrupto da região, um militar...</p>
-                  Sou um perigoso defensor do código aberto, da liberdade digital, da revolução ecológica e do uso do poder da tecnologia e desobediência civil para impulsionar mudanças sociais.<br>
-                  <br>
-                  Em um mundo onde os dados são a nova moeda, eu sou o Robin Hood digital, roubando dos poderosos para devolver à natureza e ao povo. Um pirata virtual, um caubói dos teclados.
-                </p>
+                <div>
+                    <p class="font-weight-bold">Identidade Civil:</p>
+                    Nome: Héric Moura<br>
+                    Ocupação: Estudante de Serviço Social<br>
+                    Localização: Santos, Brasil<br>
+                    <br>
+                    <p class="font-weight-bold">Identidade Hacker:</p>
+                    Nome de Guerra: W3rá popygu@<br>
+                    Habilidades: Python, Django, OpenCV<br>
+                    Objetivos: Revolução Ecológica e Justiça Social através do Hacking<br>
+                    <br>
+                </div>
+                <p class="font-weight-bold">Resumo:</p>
+                <br>
+                Sou um estudante de Serviço Social que caminha pelas ruas sujas de Santos, Brasil. À noite, transformo-me em W3rá popygu@, um hacker habilidoso em Python, atormentado por uma luta interna e uma missão implacável. Sou um perigoso defensor do código aberto, da liberdade digital e da revolução ecológica. Uso o poder da tecnologia e da desobediência civil para impulsionar a revolução.<br>
+                <br>
+                Em um passado distante de militância política, fui processado por um perigoso político corrupto da região. Após anos de reclusão, decidi lutar através do anonimato virtual. Desde então, já alterei as senhas de outro político corrupto da região, um militar...<br>
+                <br>
+                Sou um perigoso defensor do código aberto, da liberdade digital, da revolução ecológica e do uso do poder da tecnologia e desobediência civil para impulsionar mudanças sociais.<br>
+                <br>
+                Em um mundo onde os dados são a nova moeda, eu sou o Robin Hood digital, roubando dos poderosos para devolver à natureza e ao povo. Um pirata virtual, um caubói dos teclados.
+                <br><br>
 
                 <div class="mt-5">
                     <h2 class="font-weight-bold">Certificações:</h2>
@@ -177,7 +177,7 @@
                 </div>
 
                 <div class="mt-5">
-                    <p>📧 Sinta-se à vontade para se conectar comigo em <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
+                    <p>Sinta-se à vontade para se conectar comigo em busca da revolução: <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
                 </div>
             </div>
         </div>
@@ -237,5 +237,4 @@
         });
     </script>
 </body>
-
 </html>
