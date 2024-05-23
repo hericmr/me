@@ -19,7 +19,6 @@
             background-image: url('https://images.unsplash.com/photo-1547317058-fc36ec7e6aa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGN5YmVycHVuayUyMGJhY2tncm91bmR8fDB8fHx8MTYyNzgyNzA4NA&ixlib=rb-1.2.1&q=80&w=1080');
             background-size: cover;
             background-blend-mode: multiply;
-            overflow: hidden;
         }
 
         .content {
@@ -79,7 +78,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0;
+            z-index: -1;
             pointer-events: none;
         }
     </style>
@@ -143,7 +142,7 @@
             </div>
 
             <div class="mt-5">
-                <h2 class="font-weight-bold">Ferramentas:</h2>
+                <h2 class="font-weight-bold">🛠️ Ferramentas que já usei:</h2>
                 <ul>
                     <li> Python</li>
                     <li> Django</li>
@@ -203,6 +202,7 @@
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
+            const columns = canvas.width / fontSize;
             drops.length = 0;
             for (let x = 0; x < columns; x++) {
                 drops[x] = 1;
