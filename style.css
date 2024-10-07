@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.certification-link, .project-link {
+    color: #007bff;
+}
+
+.certification-link:hover, .project-link:hover {
+    text-decoration: underline;
+}
