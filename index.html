@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Héric Moura</title>
 
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Meta Tags -->
     <meta name="description" content="Héric Moura's personal page. Héric is a Python programming and Social Work student at UNIFESP in Santos, Brazil.">
     <meta name="author" content="Héric Moura">
@@ -16,82 +22,39 @@
     <meta property="og:description" content="Héric Moura's personal page, featuring his projects, certifications, and articles.">
     <meta property="og:image" content="https://cdn-icons-png.flaticon.com/256/2938/2938242.png">
 
-    <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
     <link rel="icon" href="https://hericmr.github.io/me/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Chamada do navbar externo -->
+<body class="font-roboto bg-gradient-to-r from-blue-200 via-teal-500 to-white">
 
-    <div id="__next" class="container mt-5">
-        <div class="text-center mb-5">
+    <div id="__next" class="container mx-auto mt-10 px-4">
+        <div class="text-center mb-10">
             <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
-                class="profile-img mx-auto d-block" src="imagens/heric.png" />
-            <h1 class="text-4xl font-weight-bold mt-3">Héric Moura</h1>
-        <div id="navbar-container"></div>
-    </div>
-        <div class="content">
-            <p>I am currently a student of Social Work at the Federal University of São Paulo (UNIFESP), while also pursuing Python programming independently. I live in Santos, Brazil. I am dedicated to deepening my understanding of Python and its diverse applications. I am eager to participate in projects aligned with the objectives of social justice, ecological revolution, and initiatives based on Python and the web.</p>
-            
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Certifications:</h2>
-                <ul>
-                    <li>
-                        <a class="certification-link font-weight-bold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">CS50's Introduction to Programming with Python, Harvard University</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Projects</h2>
-                <ul>
-                    <li>Developed <a class="project-link font-weight-bold" href="https://hericmr.github.io/Lindiflix" >Lindiflix</a>, a site that showcases some of the works produced by students from the Licenciatura Intercultural Indígena da UNIFESP in 2024. Are  videos of children sharing their daily lives, knowledge, games, and communities. It’s an invitation to explore the diversity of the indigenous peoples of São Paulo.</li>
-                    <li>Developed <a class="project-link font-weight-bold" href="https://github.com/hericmr/El-Vigilante">Vigilante</a>, an application that allows users to view real-time camera feeds from select locations in Santos, Brazil. This Python-powered app leverages the public cameras provided by the Santos city government for a virtual watch.</li>
-                    <li>Developed <a class="project-link font-weight-bold" href="https://github.com/hericmr/ocaicara">O Caiçara</a>, a geolocation game set in Santos, SP, where players, as Chorão, identify city neighborhoods quickly. The game, developed in Python using Pygame, is designed for educational and entertainment purposes.</li>
-                </ul>
-            </div>
-
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Formation</h2>
-                <ul>
-                    <li>Finishing my studies in Social Work at UNIFESP.</li>
-                </ul>
-            </div>
-
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Articles</h2>
-                <p>Check out at <a href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/">Alienação e Automação: O Impacto das IAs e do GPT no Mundo do Trabalho</a></p>
-            </div>
-
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Tools I've worked with:</h2>
-                <ul>
-                    <li> Python</li>
-                    <li> Django</li>
-                    <li> OpenCV</li>
-                    <li> Pygame</li>
-                    <li> HTML</li>
-                    <li> CSS</li>
-                    <li> GitHub</li>
-                </ul>
-            </div>
-
-            <div class="mt-5">
-                <p>📧 Feel free to connect with me at <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
-            </div>
+                class="profile-img mx-auto rounded-full w-48 h-48" src="imagens/heric.png" />
+            <h1 class="text-4xl font-bold mt-4">Héric Moura</h1>
+            <div id="navbar-container"></div>
         </div>
-    </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+        <!-- Load the navbar using JavaScript -->
+        <script>
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading the navbar:', error));
+        </script>
+
+        <div class="max-w-2xl mx-auto text-left">
+            <p class="text-gray-700 leading-relaxed">
+                I am currently a student of Social Work at the Federal University of São Paulo (UNIFESP), while also pursuing Python programming independently. I live in Santos, Brazil. I am dedicated to deepening my understanding of Python and its diverse applications. I am eager to participate in projects aligned with the objectives of social justice, ecological revolution, and initiatives based on Python and the web.
+            </p>
+        </div>
+
+        <!-- Rest of your content -->
+
+    </div>
 </body>
 
 </html>
