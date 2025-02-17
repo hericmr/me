@@ -1,96 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Héric Moura</title>
 
     <!-- Meta Tags -->
-    <meta name="description" content="Héric Moura's personal page. Héric is a Python programming and Social Work student at UNIFESP in Santos, Brazil.">
-    <meta name="author" content="Héric Moura">
-    <meta name="keywords" content="Héric Moura, Python, Social Work, UNIFESP, Projects, Certifications, Santos, Brazil">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hericmr.github.io/me/">
-    <meta property="og:title" content="Héric Moura">
-    <meta property="og:description" content="Héric Moura's personal page, featuring his projects, certifications, and articles.">
-    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/256/2938/2938242.png">
+    <meta name="description" content="Héric Moura's personal page. Héric is a Python programming and Social Work student at UNIFESP in Santos, Brazil." />
+    <meta name="author" content="Héric Moura" />
+    <meta name="keywords" content="Héric Moura, Python, Social Work, UNIFESP, Projects, Certifications, Santos, Brazil" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hericmr.github.io/me/" />
+    <meta property="og:title" content="Héric Moura" />
+    <meta property="og:description" content="Héric Moura's personal page, featuring his projects, certifications, and articles." />
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/256/2938/2938242.png" />
 
-    <link rel="stylesheet" href="style.css">
     <!-- Favicon -->
-    <link rel="icon" href="https://hericmr.github.io/me/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="https://hericmr.github.io/me/favicon.ico" type="image/x-icon" />
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-<body>
-    <div id="__next" class="container mt-5">
-        <div class="text-center mb-5">
-            <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" class="profile-img mx-auto d-block" src="imagens/heric.png" />
-            <h1 class="text-4xl font-weight-bold mt-3">Héric Moura</h1>
-        </div>
-        <div class="content">
-            <p>I’m Héric Moura, currently a Social Work student at the Federal University of São Paulo (UNIFESP) and an independent Python programming learner. I live in Santos, Brazil, and I'm looking for projects that promote social justice, ecological revolution, and are based on Python and the web. I am dedicated to expanding my knowledge of Python and its various applications, aiming to participate in projects with a positive social impact.</p>
-            
-            <div class="mt-5">
-                <h2 class="font-weight-bold">🎓 Certifications</h2>
-                <ul>
-                    <li>
-                        <a class="certification-link font-weight-bold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">CS50's Introduction to Programming with Python, Harvard University</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-roboto text-gray-800">
+    <div id="__next" class="container mx-auto px-4 py-8">
+      <!-- Cabeçalho -->
+      <header class="text-center mb-10">
+        <img
+          src="imagens/heric.png"
+          alt="Héric Moura"
+          loading="lazy"
+          width="150"
+          height="150"
+          decoding="async"
+          class="mx-auto block rounded-full"
+        />
+        <h1 class="mt-4 text-4xl font-bold">Héric Moura</h1>
+      </header>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">📂 Projects</h2>
-                <ul>
-                    <li><a class="project-link font-weight-bold" href="https://hericmr.github.io/ConcurseiraPobre">Concurseira Pobre</a> - A free website offering a comprehensive collection of questions from the AVANÇA SP exam board to support efficient, no-cost exam preparation. <a href="https://github.com/hericmr/webscrapping_concurseira" target="_blank">Web scraping repository</a>.</li>
-                    <li><a class="project-link font-weight-bold" href="https://hericmr.github.io/Lindiflix">Lindiflix</a> - A site showcasing works from UNIFESP’s Intercultural Indigenous Licentiate program in 2024.</li>
-                    <li><a class="project-link font-weight-bold" href="https://hericmr.github.io/cameras">Vigilante</a> - A Python-powered app to view public camera feeds in Santos, Brazil.</li>
-                    <li><a class="project-link font-weight-bold" href="https://github.com/hericmr/ocaicara">O Caiçara</a> - A geolocation game set in Santos, SP, developed with Python and Pygame.</li>
-                </ul>
-            </div>
+      <!-- Conteúdo principal -->
+      <main class="space-y-10">
+        <!-- Apresentação -->
+        <section>
+          <p>
+            I’m Héric Moura, currently a Social Work student at the Federal University of São Paulo (UNIFESP) and an independent Python programming learner. I live in Santos, Brazil, and I'm looking for projects that promote social justice, ecological revolution, and are based on Python and the web. I am dedicated to expanding my knowledge of Python and its various applications, aiming to participate in projects with a positive social impact.
+          </p>
+        </section>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">🎓 Education</h2>
-                <ul>
-                    <li>Finishing my studies in Social Work at UNIFESP.</li>
-                </ul>
-            </div>
+        <!-- Certificações -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">🎓 Certifications</h2>
+          <ul class="list-disc ml-5">
+            <li>
+              <a
+                href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540"
+                target="_blank"
+                class="text-blue-500 hover:underline font-bold"
+                >CS50's Introduction to Programming with Python, Harvard University</a
+              >
+            </li>
+          </ul>
+        </section>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">📝 Articles</h2>
-                <p>Check out at <a href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/">Alienation and Automation: The Impact of AI and GPT on the World of Work</a>.</p>
-            </div>
+        <!-- Projetos -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">📂 Projects</h2>
+          <ul class="list-disc ml-5 space-y-2">
+            <li>
+              <a
+                href="https://hericmr.github.io/ConcurseiraPobre"
+                class="text-blue-500 hover:underline font-bold"
+                >Concurseira Pobre</a
+              >
+              - A free website offering a comprehensive collection of questions from the AVANÇA SP exam board to support efficient, no-cost exam preparation.
+              <a
+                href="https://github.com/hericmr/webscrapping_concurseira"
+                target="_blank"
+                class="text-blue-500 hover:underline"
+                >Web scraping repository</a
+              >.
+            </li>
+            <li>
+              <a
+                href="https://hericmr.github.io/Lindiflix"
+                class="text-blue-500 hover:underline font-bold"
+                >Lindiflix</a
+              >
+              - A site showcasing works from UNIFESP’s Intercultural Indigenous Licentiate program in 2024.
+            </li>
+            <li>
+              <a
+                href="https://hericmr.github.io/cameras"
+                class="text-blue-500 hover:underline font-bold"
+                >Vigilante</a
+              >
+              - A Python-powered app to view public camera feeds in Santos, Brazil.
+            </li>
+            <li>
+              <a
+                href="https://github.com/hericmr/ocaicara"
+                class="text-blue-500 hover:underline font-bold"
+                >O Caiçara</a
+              >
+              - A geolocation game set in Santos, SP, developed with Python and Pygame.
+            </li>
+          </ul>
+        </section>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">🔧 Tools</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>OpenCV</li>
-                    <li>Pygame</li>
-                    <li>React</li>
-                    <li>Tailwind CSS</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
+        <!-- Educação -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">🎓 Education</h2>
+          <ul class="list-disc ml-5">
+            <li>Finishing my studies in Social Work at UNIFESP.</li>
+          </ul>
+        </section>
 
-            <div class="mt-5">
-                <p>📧 Feel free to connect with me at <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
-            </div>
-        </div>
+        <!-- Artigos -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">📝 Articles</h2>
+          <p>
+            Check out at
+            <a
+              href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/"
+              class="text-blue-500 hover:underline"
+              >Alienation and Automation: The Impact of AI and GPT on the World of Work</a
+            >.
+          </p>
+        </section>
+
+        <!-- Ferramentas -->
+        <section>
+          <h2 class="text-2xl font-bold mb-2">🔧 Tools</h2>
+          <ul class="list-disc ml-5">
+            <li>Python</li>
+            <li>Django</li>
+            <li>OpenCV</li>
+            <li>Pygame</li>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>GitHub</li>
+          </ul>
+        </section>
+
+        <!-- Contato -->
+        <section>
+          <p>
+            📧 Feel free to connect with me at
+            <a href="mailto:heric.moura@unifesp.br" class="text-blue-500 hover:underline"
+              >heric.moura@unifesp.br</a
+            >.
+          </p>
+        </section>
+      </main>
     </div>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Script personalizado -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
