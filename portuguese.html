@@ -6,133 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Héric Moura</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .content {
-            max-width: 750px;
-            margin: 0 auto;
-        }
-        .profile-img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-        .navbar-nav .nav-item {
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .certification-link, .project-link {
-            color: #007bff;
-        }
-        .certification-link:hover, .project-link:hover {
-            text-decoration: underline;
-        }
-    </style>
 </head>
 
-<body>
-    <div id="__next" class="container mt-5">
-        <div class="text-center mb-5">
-                    <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
-                        class="profile-img mx-auto d-block" src="imagens/heric.png" />
-                    <h1 class="text-4xl font-weight-bold mt-3">Héric Moura</h1>
-                <div id="navbar-container"></div>
-            </div>
+<body class="font-roboto bg-gradient-to-r from-blue-100 via-teal-500 to-white">
 
-        <div class="content">
-            <p>Sou estudante de Serviço Social na Universidade Federal de São Paulo (UNIFESP) e também me dedico ao aprendizado de programação em Python. Vivo em Santos, Brasil, e busco aprimorar meus conhecimentos em programação, ciência de dados e suas diversas aplicações. Tenho muito interesse em contribuir para projetos tecnológicos que envolvam a justiça social, luta por direitos, revolução ecológica.</p>
+    <div id="__next" class="container mx-auto mt-10 px-4">
+        <div class="text-center mb-10">
+            <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
+                class="profile-img mx-auto rounded-full w-48 h-48" src="imagens/heric.png" />
+            <h1 class="text-4xl font-bold mt-4">Héric Moura</h1>
+            <div id="navbar-container"></div>
+        </div>
 
-<div class="mt-5">
-    <h2 class="font-weight-bold">Certificações</h2>
-    <ul>
-        <li>
-            <a class="certification-link font-weight-bold" href="https://cs50.harvard.edu/certificates/a8bad3df-610c-4d32-9d61-a5ebff587112" target="_blank">
-                CS50's Introduction to Cybersecurity – Harvard University
-            </a>
-            <br>
-            <small>Curso concluído em 2025, abordando fundamentos de segurança digital, criptografia e boas práticas.</small>
-        </li>
-        <li>
-            <a class="certification-link font-weight-bold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">
-                CS50's Introduction to Programming with Python – Harvard University
-            </a>
-            <br>
-            <small>Curso introdutório cobrindo lógica de programação, estruturas de dados e fundamentos da linguagem Python.</small>
-        </li>
-        <li>
-            <a class="certification-link font-weight-bold" href="https://github.com/hericmr/me/blob/a0959f4524346c3f6ed8423639acfff1986ee33e/imagens/H%C3%A9ric%20Moura.pdf" target="_blank">
-                Python para Ciência de Dados – Universidade de São Paulo (USP)
-            </a>
-            <br>
-            <small>Curso organizado pelo grupo de extensão Data, concluído no 2º semestre de 2024 (40h).</small>
-        </li>
-    </ul>
-</div>
+        <div class="max-w-2xl mx-auto text-left">
+            <p class="text-gray-700 leading-relaxed">
+                Sou estudante de Serviço Social na Universidade Federal de São Paulo (UNIFESP) e também me dedico ao aprendizado de programação em Python. Vivo em Santos, Brasil, e busco aprimorar meus conhecimentos em programação, ciência de dados e suas diversas aplicações. Tenho muito interesse em contribuir para projetos tecnológicos que envolvam a justiça social, luta por direitos, revolução ecológica.
+            </p>
+        </div>
 
+        <div class="max-w-2xl mx-auto mt-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">Certificações</h2>
+            <ul class="space-y-4">
+                <li class="text-center">
+                    <a class="text-blue-600 hover:underline font-semibold" href="https://cs50.harvard.edu/certificates/a8bad3df-610c-4d32-9d61-a5ebff587112" target="_blank">
+                        CS50's Introduction to Cybersecurity – Harvard University
+                    </a>
+                    <br>
+                    <small class="text-gray-600">Curso concluído em 2025, abordando fundamentos de segurança digital, criptografia e boas práticas.</small>
+                </li>
+                <li class="text-center">
+                    <a class="text-blue-600 hover:underline font-semibold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">
+                        CS50's Introduction to Programming with Python – Harvard University
+                    </a>
+                    <br>
+                    <small class="text-gray-600">Curso introdutório cobrindo lógica de programação, estruturas de dados e fundamentos da linguagem Python.</small>
+                </li>
+                <li class="text-center">
+                    <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/me/blob/a0959f4524346c3f6ed8423639acfff1986ee33e/imagens/H%C3%A9ric%20Moura.pdf" target="_blank">
+                        Python para Ciência de Dados – Universidade de São Paulo (USP)
+                    </a>
+                    <br>
+                    <small class="text-gray-600">Curso organizado pelo grupo de extensão Data, concluído no 2º semestre de 2024 (40h).</small>
+                </li>
+            </ul>
+        </div>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">Projetos</h2>
-                <ul>
-                    <li>Desenvolvi <a class="project-link font-weight-bold" href="https://hericmr.github.io/Lindiflix">Lindiflix</a>, um site que apresenta alguns dos trabalhos produzidos por alunos do Curso de Licenciatura Intercultural Indígena na UNIFESP em 2024. São vídeos de crianças compartilhando seu cotidiano, conhecimentos, brincadeiras e comunidades. É um convite para explorar a diversidade dos povos indígenas de São Paulo.</li>
-                    <li>Desenvolvi <a class="project-link font-weight-bold" href="https://github.com/hericmr/El-Vigilante">Vigilante</a>, uma aplicação que permite aos usuários visualizar feeds de câmeras em tempo real de locais selecionados em Santos, Brasil. Este aplicativo, desenvolvido em Python, utiliza as câmeras públicas fornecidas pela prefeitura de Santos para uma vigilância virtual.</li>
-                    <li>Desenvolvi <a class="project-link font-weight-bold" href="https://github.com/hericmr/ocaicara">O Caiçara</a>, um jogo de geolocalização ambientado em Santos, SP, onde os jogadores, como Chorão, identificam rapidamente os bairros da cidade. O jogo, desenvolvido em Python usando Pygame, é projetado para fins educacionais e de entretenimento.</li>
-                </ul>
-            </div>
+        <div class="max-w-2xl mx-auto mt-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">Projetos</h2>
+            <ul class="space-y-4">
+                <li class="text-left">
+                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://hericmr.github.io/Lindiflix">Lindiflix</a>, um site que apresenta alguns dos trabalhos produzidos por alunos do Curso de Licenciatura Intercultural Indígena na UNIFESP em 2024. São vídeos de crianças compartilhando seu cotidiano, conhecimentos, brincadeiras e comunidades. É um convite para explorar a diversidade dos povos indígenas de São Paulo.
+                </li>
+                <li class="text-left">
+                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/El-Vigilante">Vigilante</a>, uma aplicação que permite aos usuários visualizar feeds de câmeras em tempo real de locais selecionados em Santos, Brasil. Este aplicativo, desenvolvido em Python, utiliza as câmeras públicas fornecidas pela prefeitura de Santos para uma vigilância virtual.
+                </li>
+                <li class="text-left">
+                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/ocaicara">O Caiçara</a>, um jogo de geolocalização ambientado em Santos, SP, onde os jogadores, como Chorão, identificam rapidamente os bairros da cidade. O jogo, desenvolvido em Python usando Pygame, é projetado para fins educacionais e de entretenimento.
+                </li>
+            </ul>
+        </div>
 
-<div class="mt-5">
-    <h2 class="font-weight-bold">Universidade</h2>
-    <ul>
-        <li>Graduando em Serviço Social na UNIFESP.</li>
-    </ul>
-</div>
-<div class="mt-5">
-    <h2 class="font-weight-bold">Artigos</h2>
-    <ul>
-        <li>
-            <strong>"Mudanças Climáticas: Deslizamentos na Baixada Santista e a Responsabilidade Socioambiental do Estado"</strong>  
-            – Coautoria com Leonardo Bernardes Guimarães e Edson Ricardo Saleme.  
-            <a href="https://doi.org/10.58422/releo2024.e1603" target="_blank">DOI: 10.58422/releo2024.e1603</a>
-        </li>
-        <li>
-            <strong>"Alienação e Automação: O Impacto das IAs e do GPT no Mundo do Trabalho"</strong>  
-            – Publicado na revista Contrapoder.  
-            <a href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/" target="_blank">Leia aqui</a>
-        </li>
-    </ul>
-</div>
+        <div class="max-w-2xl mx-auto mt-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">Universidade</h2>
+            <ul class="space-y-4">
+                <li class="text-center">Graduando em Serviço Social na UNIFESP.</li>
+            </ul>
+        </div>
 
+        <div class="max-w-2xl mx-auto mt-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">Artigos</h2>
+            <ul class="space-y-4">
+                <li class="text-left">
+                    <strong>"Mudanças Climáticas: deslizamentos na Baixada Santista e a responsabilidade socioambiental do Estado"</strong>  
+                    – Coautoria com Leonardo Bernardes Guimarães e Edson Ricardo Saleme.  
+                    <a class="text-blue-600 hover:underline" href="https://doi.org/10.58422/releo2024.e1603" target="_blank">DOI: 10.58422/releo2024.e1603</a>
+                </li>
+                <li class="text-left">
+                    <strong>"Alienação e Automação: o impacto das IAs e do GPT no mundo do trabalho"</strong>  
+                    – Publicado na revista Contrapoder.  
+                    <a class="text-blue-600 hover:underline" href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/" target="_blank">Leia aqui</a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="mt-5">
-                <h2 class="font-weight-bold">🛠️ Ferramentas com as quais trabalhei:</h2>
-                <ul>
-                    <li> Python</li>
-                    <li> Django</li>
-                    <li> OpenCV</li>
-                    <li> Pygame</li>
-                    <li> HTML</li>
-                    <li> CSS</li>
-                    <li> GitHub</li>
-                </ul>
-            </div>
+        <div class="max-w-2xl mx-auto mt-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">Ferramentas com as quais trabalhei:</h2>
+            <ul class="space-y-4">
+                <li class="text-center"> Python</li>
+                <li class="text-center">React</li>
+                <li class="text-center"> Django</li>
+                <li class="text-center"> OpenCV</li>
+                <li class="text-center"> Pygame</li>
+                <li class="text-center"> HTML</li>
+                <li class="text-center"> CSS</li>
+                <li class="text-center"> GitHub</li>
+            </ul>
+        </div>
 
-            <div class="mt-5">
-                <p>📧 Sinta-se à vontade para entrar em contato comigo em <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
-            </div>
+        <div class="max-w-2xl mx-auto mt-8 text-center">
+            <p class="text-gray-700"> Sinta-se à vontade para entrar em contato comigo em <a class="text-blue-600 hover:underline" href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
         </div>
     </div>
-
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
