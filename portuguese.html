@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Héric Moura</title>
@@ -11,116 +10,117 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+  </head>
 
-<body class="font-roboto bg-gradient-to-r from-blue-200 via-teal-500 to-white">
-
+  <body class="font-roboto bg-gradient-to-r from-blue-200 via-teal-500 to-white">
     <div id="__next" class="container mx-auto mt-10 px-4">
-        <div class="text-center mb-10">
-            <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
-                class="profile-img mx-auto rounded-full w-48 h-48" src="imagens/heric.png" />
-            <h1 class="text-4xl font-bold mt-4">Héric Moura</h1>
-            <div id="navbar-container"></div>
-        </div>
+      <!-- Cabeçalho com imagem e título -->
+      <div class="text-center mb-10">
+        <img
+          alt="Héric Moura"
+          loading="lazy"
+          width="150"
+          height="150"
+          decoding="async"
+          class="mx-auto rounded-full w-48 h-48"
+          src="imagens/heric.png"
+        />
+        <h1 class="text-4xl font-bold mt-4">Héric Moura</h1>
+        <!-- Navbar integrado -->
+        <nav class="bg-white shadow-md mt-3">
+          <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-center">
+              <ul class="flex space-x-6">
+                <li>
+                  <a
+                    class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                    href="/me"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                    href="/me/videos"
+                    >Videos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                    href="/me/portuguese"
+                    >Português</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
 
-        <div class="max-w-2xl mx-auto text-left">
-            <p class="text-gray-700 leading-relaxed">
-                Sou estudante de Serviço Social na Universidade Federal de São Paulo (UNIFESP) e também me dedico ao aprendizado de programação em Python, ciência de dados e suas diversas aplicações. Vivo em Santos, Brasil e tenho muito interesse em contribuir para projetos tecnológicos que envolvam a justiça social, luta por direitos, revolução ecológica.
+      <!-- Conteúdo da página -->
+      <div class="max-w-2xl mx-auto text-left">
+        <h2 class="text-2xl font-bold mb-4">
+          🎥 Aqui estão alguns dos meus projetos:
+        </h2>
+        <ul class="space-y-6">
+          <li>
+            <p class="text-gray-700">
+              Neste projeto final do curso CS50 de Cybersecurity, discuto o crescente problema dos ataques de ransomware no Brasil. Falo sobre como esses ataques funcionam, compartilho exemplos de incidentes recentes e ofereço conselhos sobre como se proteger.
             </p>
-        </div>
+          </li>
 
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Certificações</h2>
-            <ul class="space-y-4">
-                <li class="text-center">
-                    <a class="text-blue-600 hover:underline font-semibold" href="https://cs50.harvard.edu/certificates/a8bad3df-610c-4d32-9d61-a5ebff587112" target="_blank">
-                        CS50's Introduction to Cybersecurity – Harvard University
-                    </a>
-                    <br>
-                    <small class="text-gray-600">Curso concluído em 2025, abordando fundamentos de segurança digital, criptografia e boas práticas.</small>
-                </li>
-                <li class="text-center">
-                    <a class="text-blue-600 hover:underline font-semibold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">
-                        CS50's Introduction to Programming with Python – Harvard University
-                    </a>
-                    <br>
-                    <small class="text-gray-600">Curso introdutório cobrindo lógica de programação, estruturas de dados e fundamentos da linguagem Python.</small>
-                </li>
-                <li class="text-center">
-                    <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/me/blob/a0959f4524346c3f6ed8423639acfff1986ee33e/imagens/H%C3%A9ric%20Moura.pdf" target="_blank">
-                        Python para Ciência de Dados – Universidade de São Paulo (USP)
-                    </a>
-                    <br>
-                    <small class="text-gray-600">Curso organizado pelo grupo de extensão Data, concluído no 2º semestre de 2024 (40h).</small>
-                </li>
-            </ul>
-        </div>
+          <li>
+            <div class="my-4">
+              <iframe
+                class="w-full"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Id0qJt8ehHQ?si=l7CFt-ZJCfMbMHZv"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </li>
 
-        
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Projetos</h2>
-            <ul class="space-y-4">
-                <li class="text-left">
-                    Em parceria com Leandro Fadelli, desenvolvi a <a class="text-blue-600 hover:underline font-semibold" href="https://hericmr.github.io/cartografiasocial">Cartografia Social de Santos</a>, um mapa dinâmico que cartografa territorialidades e lutas dos movimentos sociais na cidade. O conteúdo foi produzido por estudantes de Serviço Social da UNIFESP nas unidades curriculares de Política Social 2 (2024-2025).
-                </li>
-                <li class="text-left">
-                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://hericmr.github.io/ConcurseiraPobre">Concurseira Pobre</a>, um site gratuito que oferece uma coleção de questões da banca de concurso AVANÇA-SP para auxiliar na preparação de exames de forma eficiente e sem custos. Os usuários podem acessar questões passadas, praticar e estudar com acesso a respostas. O backend foi feito com Python, utilizando web scraping para obter exames passados e os gabaritos da banca.
-                </li>
-                <li class="text-left">
-                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://hericmr.github.io/Lindiflix">Lindiflix</a>, um site que apresenta alguns dos trabalhos produzidos por alunos do Curso de Licenciatura Intercultural Indígena na UNIFESP em 2024. São vídeos de crianças compartilhando seu cotidiano, conhecimentos, brincadeiras e comunidades. É um convite para explorar a diversidade dos povos indígenas de São Paulo.
-                </li>
-                <li class="text-left">
-                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/El-Vigilante">Vigilante</a>, uma aplicação que permite aos usuários visualizar feeds de câmeras em tempo real de locais selecionados em Santos, Brasil. Este aplicativo, desenvolvido em Python, utiliza as câmeras públicas fornecidas pela prefeitura de Santos para uma vigilância virtual. Os dados das câmeras foram obtidos através de requisições HTTPS, aproveitando endpoints disponíveis na internet. A versão simples do site pode ser encontrada em: <a class="text-blue-600 hover:underline" href="https://hericmr.github.io/cameras">https://hericmr.github.io/cameras</a>.
-                </li>
-                <li class="text-left">
-                    E o meu preferido: <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/ocaicara">O Caiçara</a>, um jogo de geolocalização ambientado em Santos, SP, onde os jogadores, como Chorão, identificam rapidamente os bairros da cidade. O jogo, desenvolvido em Python usando Pygame, é projetado para fins educacionais e de entretenimento.
-                </li>
-            </ul>
-        </div>
+          <li>
+            <p class="text-gray-700">
+              <a
+                class="text-blue-600 hover:underline font-semibold"
+                href="https://github.com/hericmr/ocaicara"
+                target="_blank"
+                >O Caiçara</a
+              >
+              é um jogo inspirado no Traveler IQ Challenge, desenvolvido em Python e Pygame, onde o objetivo é encontrar bairros na cidade de Santos, São Paulo.
+            </p>
+          </li>
 
-        
+          <li>
+            <div class="my-4">
+              <iframe
+                class="w-full"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MtoaXkZIpLQ?si=5aw7pXfrF_U-rtNz"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </li>
 
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Universidade</h2>
-            <ul class="space-y-4">
-                <li class="text-center">Graduando em Serviço Social na UNIFESP.</li>
-            </ul>
-        </div>
-
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Artigos</h2>
-            <ul class="space-y-4">
-                <li class="text-left">
-                    <strong>"Mudanças climáticas: deslizamentos na Baixada Santista e a responsabilidade socioambiental do Estado"</strong>  
-                    – Coautoria com Leonardo Bernardes Guimarães e Edson Ricardo Saleme.  
-                    <a class="text-blue-600 hover:underline" href="https://doi.org/10.58422/releo2024.e1603" target="_blank">DOI: 10.58422/releo2024.e1603</a>
-                </li>
-                <li class="text-left">
-                    <strong>"Alienação e Automação: o impacto das IAs e do GPT no mundo do trabalho"</strong>  
-                    – Publicado na revista Contrapoder.  
-                    <a class="text-blue-600 hover:underline" href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/" target="_blank">Leia aqui</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Ferramentas com as quais trabalhei:</h2>
-            <ul class="space-y-4">
-                <li class="text-center"> Python</li>
-                <li class="text-center">React</li>
-                <li class="text-center"> Django</li>
-                <li class="text-center"> OpenCV</li>
-                <li class="text-center"> Pygame</li>
-                <li class="text-center"> HTML</li>
-                <li class="text-center"> CSS</li>
-                <li class="text-center"> GitHub</li>
-            </ul>
-        </div>
-
-        <div class="max-w-2xl mx-auto mt-8 text-center">
-            <p class="text-gray-700"> Sinta-se à vontade para entrar em contato comigo em <a class="text-blue-600 hover:underline" href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
-        </div>
+          <li>
+            <p class="text-gray-700">
+              📧 Sinta-se à vontade para entrar em contato comigo em
+              <a class="text-blue-600 hover:underline" href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
