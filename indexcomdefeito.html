@@ -1,79 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Héric Moura</title>
-
-    <link rel="preload" href="/me/fonte.woff2" as="font" type="font/woff2" crossorigin="anonymous"
-        data-next-font="size-adjust" />
-    <link rel="preload" href="/me/preload2.css" as="style" />
-    <link rel="stylesheet" href="/me/styleme.css" data-n-g="" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Héric Moura Rodrigues - Currículo</title>
+  <!-- Tailwind CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7fafc;
+    }
+    /* Define as dimensões de uma página A4 */
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+    /* Container com largura exata de uma página A4 (210mm) */
+    .a4-container {
+      width: 210mm;        /* Largura de um A4 */
+      min-height: 297mm;    /* Altura mínima de um A4 */
+      margin: 0 auto;
+      padding: 20mm;
+      background: #ffffff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    @media print {
+      .a4-container {
+        box-shadow: none;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div id="__next">
-        <div class="container mx-auto max-w-2xl p-3 mb-8 text-lg __className_01f6d6">
+  <div class="a4-container">
+    <!-- Cabeçalho -->
+    <header class="text-center mb-8">
+        <h1 class="text-4xl font-bold">Héric Moura Rodrigues</h1>
+        <p class="mt-2 text-lg">35 anos (01/01/1990)</p>
+        <p class="mt-2">Rua Bassin Nagib Trabulsi, Ponta da Praia, Santos – SP, Brasil</p>
+        <p class="mt-2">
+          Telefone: <strong>(55 13) 991812210</strong> | Email: 
+          <a href="mailto:heric.moura@unifesp.br" class="text-blue-500 hover:underline">heric.moura@unifesp.br</a>
+        </p>
+        <p class="mt-2">
+          Lattes: 
+          <a href="http://lattes.cnpq.br/2872927417090543" target="_blank" class="text-blue-500 hover:underline">
+            http://lattes.cnpq.br/2872927417090543
+          </a>
+        </p>
+      </header>
 
-            <img alt="Héric Moura" loading="lazy" width="" height="500" decoding="async" data-nimg="1"
-                class="w-40 mx-auto pt-2" style="color:transparent" src="heric.png" />
-            <h1 class="text-center text-4xl font-semibold py-3">Héric Moura</h1>
-            <div class="flex flex-row flex-nowrap overflow-scroll justify-center space-x-8 pb-2 px-4 text-lg">
-                <span class="text-gray-500 hover:text-blue-500 hover:underline">
-                  <a href="/me">Home</a>
-                </span>
-                <span class="text-gray-500 hover:text-blue-500 hover:underline">
-                  <a href="/videos">Videos</a>
-                </span>
-                <span class="text-gray-500 hover:text-blue-500 hover:underline">
-                  <a href="/me/portuguese.html">Português</a>
-                </span>
-              </div>
-            
+    <!-- Formação Acadêmica -->
+    <section class="mt-8">
+      <h2 class="text-2xl font-semibold border-b pb-2">Formação Acadêmica</h2>
+      <p class="mt-2"><strong>Universidade Federal de São Paulo (UNIFESP)</strong></p>
+      <p>Bacharelando em Serviço Social (Início: 2022 – Em andamento)</p>
+    </section>
 
+    <!-- Experiência Acadêmica e de Extensão -->
+    <section class="mt-8">
+      <h2 class="text-2xl font-semibold border-b pb-2">Experiência Acadêmica e de Extensão</h2>
+      <div class="mt-4">
+        <p class="font-semibold">Katedra Kaapora de Conhecimentos Não-Hegemônicos (UNIFESP/BS)</p>
+        <p class="italic text-sm">2024</p>
+        <p>Atuação como bolsista, contribuindo para o apoio à Licenciatura Intercultural Indígena e promovendo a valorização dos saberes tradicionais.</p>
+      </div>
+      <div class="mt-2">
+        <p class="font-semibold">Membro do PET – Programa em Educação Tutorial Educação Popular (UNIFESP/BS)</p>
+        <p class="italic text-sm">2016 a 2019</p>
+        <p>Participação ativa na transformação dos modos de (re)produção da vida social de comunidades historicamente oprimidas, com reflexões críticas sobre a realidade social.</p>
+      </div>
+    </section>
 
-            <div class="py-2">
-                <p>I'm a Social Work student at the Federal University of São Paulo (UNIFESP) and a Python programming enthusiast. I live in Santos, Brazil. Currently learning Python Language and possibilities, I am committed to honing my skills and exploring new horizons. I am open to engaging in collaborations for projects that align with the principles of social justice, ecological revolution, or any exciting Python-Web based initiatives.</p>
-                <br>
-                <div class="text-2xl font-bold pt-5 pb-4">Certifications:</div>
-                <ul>
-                    <a class="text-blue-500 hover:underline font-bold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">CS50's Introduction to Programming with Python, Harvard University </a>
-                </ul><br>
+    <!-- Formação Complementar e Certificações -->
+    <section class="mt-8">
+      <h2 class="text-2xl font-semibold border-b pb-2">Formação Complementar & Certificações</h2>
+      <ul class="list-disc list-inside mt-2 space-y-2">
+        <li>VIII Curso de Cannabis Medicinal – UNIFESP (2023-2024 | 50h)</li>
+        <li>Controle Social – MDASF (2023 | 32h)</li>
+        <li>Conhecendo a Cultura Guarani – UNIFESP (2016-2017 | 12h)</li>
+        <li>Formação em Educação Popular e Direitos Humanos – UNIFESP (2016 | 36h)</li>
+        <li>Espanhol Salamanca A2 – Universidad de Salamanca (2014 | 36h)</li>
+        <li>End Note Basic – UNIFESP (2015 | 3h)</li>
+        <li>
+          <a href="https://cs50.harvard.edu/certificates/a8bad3df-610c-4d32-9d61-a5ebff587112" target="_blank" class="text-blue-500 hover:underline font-semibold">
+            CS50's Introduction to Cybersecurity – Harvard University (2025 - 96h)
+          </a>
+        </li>
+        <li>
+          <a href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank" class="text-blue-500 hover:underline font-semibold">
+            CS50's Introduction to Programming with Python – Harvard University (2024 - 96h)
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hericmr/me/blob/a0959f4524346c3f6ed8423639acfff1986ee33e/imagens/H%C3%A9ric%20Moura.pdf" target="_blank" class="text-blue-500 hover:underline font-semibold">
+            Python para Ciência de Dados – Universidade de São Paulo (USP) (2024 - 40h)
+          </a>
+        </li>
+      </ul>
+    </section>
 
-                <div class="text-2xl font-bold pt-5 pb-4">Projects</div>
-                <ul>
-                    <li>Developed <a class="text-blue-500 hover:underline font-bold" href="https://github.com/hericmr/El-Vigilante">El Vigilante</a>, an application that allows users to view real-time camera feeds from select locations in Santos, Brazil. This Python-powered app leverages the public cameras provided by the Santos city government for a virtual watch.</li>
-                    <br>
-                    <li>Contributed to various blog posts on the <a class="text-blue-500 hover:underline font-bold" href="https://www.jornalsantista.com.br">Jornal Santista website</a>, addressing social issues such as Human Rights, Indigenous Issues, Environment, and Social Inequality.</li>
-                </ul>
-              
-              <br>
-                <p>🎓 Academic Journey:</p>
-                <ul>
-                    <li>Finishing my studies in Social Work at UNIFESP.</li>
-                </ul>
-                <br>
-                <div class="text-2xl font-bold pt-5 pb-4">Articles</div>
-                <p>Check out at <a href="https://hericmr.github.io/miseria_da_ontologia/">https://hericmr.github.io/miseria_da_ontologia/</a></p>
-           
-                <br>
-                <br>
+    <!-- Produções e Publicações -->
+    <section class="mt-8">
+      <h2 class="text-2xl font-semibold border-b pb-2">Produções e Publicações</h2>
+      <ul class="list-disc list-inside mt-2 space-y-2">
+        <li>
+          <strong>"Mudanças climáticas: deslizamentos na Baixada Santista e a responsabilidade socioambiental do Estado"</strong>
+          – Coautoria com Leonardo Bernardes Guimarães e Edson Ricardo Saleme.
+          <a href="https://doi.org/10.58422/releo2024.e1603" target="_blank" class="text-blue-500 hover:underline">DOI: 10.58422/releo2024.e1603</a>
+        </li>
+        <li>
+          <strong>"Alienação e Automação: o impacto das IAs e do GPT no mundo do trabalho"</strong>
+          – Publicado na revista Contrapoder.
+          <a href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/" target="_blank" class="text-blue-500 hover:underline">Leia aqui</a>
+        </li>
+      </ul>
+    </section>
 
-                <p>🛠️ Tools I've worked with:</p>
-                <ul>
-                    <li> Python</li>
-                    <li> Django</li>
-                    <li> OpenCV</li>
-                </ul>
-<br>
-                <p>📧 Feel free to connect with me at <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
-<br>
-            </div>
-        </div>
-    </div>
-
+    <!-- Participação em Eventos -->
+    <section class="mt-8">
+      <h2 class="text-2xl font-semibold border-b pb-2">Participação em Eventos</h2>
+      <ol class="list-decimal list-inside mt-2 space-y-2">
+        <li>9º Fórum Educação Popular - O legado de Paulo Freire e suas contribuições para a conjuntura atual. 2023. (Seminário).</li>
+        <li>Semana do Serviço Social - 30 anos do Código de Ética dos/das Assistentes Sociais e a Lei da Regulamentação da Profissão. 2023. (Congresso).</li>
+        <li>CONCEPÇAO DE SAÚDE E MODO DE VIDA DOS POVOS KISEDJÊ E KAIABI. 2022. (Seminário).</li>
+        <li>Congresso Acadêmico UNIFESP 2022: Universidade, Conhecimento e Democracia. 2022. (Congresso).</li>
+        <li>Semana da Consciência Negra 2022: Os 10 anos da lei de cotas: balanços e promessas para um futuro sem racismo. 2022. (Congresso).</li>
+        <li>XXII Fórum de Análise de Conjuntura: América Latina, Eleições e Mudanças Políticas. 2022. (Seminário).</li>
+        <li>IV Congresso Acadêmico da Unifesp - Universidade e Sociedade. Educação Popular - criando e recriando a realidade social a partir da troca de saberes com comunidades Indígenas na Baixada Santista. 2018. (Congresso).</li>
+        <li>40º Congresso da União Estadual dos Estudantes. 2017. (Congresso).</li>
+        <li>55º Congresso da União Nacional dos Estudantes. 2017. (Congresso).</li>
+        <li>Debate - Cronica de uma Crise Anunciada. 2017. (Encontro).</li>
+        <li>III Congresso Acadêmico - UNIFESP. EDUCAÇÃO POPULAR E A EMANCIPAÇÃO DOS SUJEITOS - a práxis vivenciada pelo PET Educação Popular BS. 2017. (Congresso).</li>
+        <li>Seminário Educação e Políticas Públicas. 2017. (Seminário).</li>
+        <li>3º Ciclo de Debates: Psicologia e Povos Indígenas. 2016. (Seminário).</li>
+        <li>II Congresso Acadêmico UNIFESP. Uma etnografia sobre a insurgência da bioética em jovens no curso de Psicologia. 2016. (Congresso).</li>
+        <li>Ações e Desafios para a Gestão Costeira. 2014. (Seminário).</li>
+      </ol>
+    </section>
+  </div>
 </body>
-
 </html>
