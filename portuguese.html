@@ -2,125 +2,169 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Héric Moura</title>
-
-    <!-- Tailwind CSS via CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Héric Moura</title>
+  <meta name="description" content="Héric Moura – estudante de Serviço Social na UNIFESP e desenvolvedor de projetos web sobre justiça social, território e educação indígena em Santos.">
+  <meta name="author" content="Héric Moura">
+  <link rel="canonical" href="https://hericmr.github.io/me/portuguese.html">
+  <link rel="alternate" hreflang="en" href="https://hericmr.github.io/me/">
+  <link rel="alternate" hreflang="pt-BR" href="https://hericmr.github.io/me/portuguese.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hericmr.github.io/me/portuguese.html">
+  <meta property="og:title" content="Héric Moura">
+  <meta property="og:description" content="Projetos, artigos e certificações de Héric Moura.">
+  <meta property="og:image" content="https://hericmr.github.io/me/imagens/heric.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23b4532a'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'>H</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css">
 </head>
 
-<body class="font-roboto bg-gradient-to-r from-blue-200 via-teal-500 to-white">
+<body>
+  <div class="wrap">
+    <nav class="top" aria-label="Idioma">
+      <div class="lang"><a href="./" hreflang="en">EN</a><span>PT</span></div>
+    </nav>
 
-    <div id="__next" class="container mx-auto mt-10 px-4">
-        <div class="text-center mb-10">
-            <img alt="Héric Moura" loading="lazy" width="150" height="150" decoding="async" data-nimg="1"
-                class="profile-img mx-auto rounded-full w-48 h-48" src="imagens/heric.png" />
-            <h1 class="text-4xl font-bold mt-4">Héric Moura</h1>
-            <div id="navbar-container"></div>
+    <header class="hero">
+      <img src="imagens/heric.png" alt="Héric Moura" width="120" height="120">
+      <div>
+        <h1>Héric Moura</h1>
+        <p class="tagline">Estudante de Serviço Social na UNIFESP · Desenvolvedor web · Santos, SP</p>
+        <div class="links">
+          <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>
+          <a href="https://github.com/hericmr">GitHub</a>
         </div>
+      </div>
+    </header>
 
-        <div class="max-w-2xl mx-auto text-left">
-            <p class="text-gray-700 leading-relaxed">
-                Sou estudante de Serviço Social na Universidade Federal de São Paulo (UNIFESP) e também me dedico ao aprendizado de programação em Python. Vivo em Santos, Brasil, e busco aprimorar meus conhecimentos em programação, ciência de dados e suas diversas aplicações. Tenho muito interesse em contribuir para projetos tecnológicos que envolvam a justiça social, luta por direitos, revolução ecológica.
-            </p>
+    <main>
+      <section class="about">
+        <h2>Sobre</h2>
+        <p>Sou estudante de Serviço Social na Universidade Federal de São Paulo (UNIFESP) e desenvolvo software, principalmente com Python e web. Moro em Santos, SP.</p>
+        <p>Tenho interesse em projetos ligados à justiça social, ao direito à cidade, à revolução ecológica e à educação indígena.</p>
+      </section>
+
+      <section>
+        <h2>Projetos</h2>
+
+        <article class="featured">
+          <span class="badge">Destaque</span>
+          <h3>OPIN</h3>
+          <p class="sub">Observatório dos Professores Indígenas do Estado de São Paulo · LINDI / UNIFESP</p>
+          <p>Plataforma pública que mapeia as escolas indígenas do estado de São Paulo, com mapa interativo, uma página para cada escola, painel de dados, materiais didáticos, jogos, histórias tradicionais e a coleção de vídeos Lindiflix. Sou o desenvolvedor de todo o sistema, da interface ao banco de dados e à implantação nos servidores da universidade.</p>
+          <ul class="tags">
+            <li>React</li><li>Vite</li><li>OpenLayers</li><li>PostgreSQL</li><li>PostgREST</li><li>Docker</li><li>Nginx</li>
+          </ul>
+          <div class="actions">
+            <a href="https://opin.unifesp.br/">Acessar o site →</a>
+            <a href="https://github.com/hericmr/opin">Código-fonte</a>
+          </div>
+        </article>
+
+        <div class="projects">
+          <article class="card">
+            <h3>Geosantos</h3>
+            <p>O meu preferido: um jogo de geolocalização ambientado em Santos, SP, em que os jogadores encontram no mapa os bairros e lugares importantes da cidade. Feito para fins educativos.</p>
+            <ul class="tags"><li>TypeScript</li><li>Jogo</li></ul>
+            <div class="actions">
+              <a href="https://hericmr.github.io/geosantos/">Jogar →</a>
+              <a href="https://github.com/hericmr/geosantos">Código</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Cartografia Social de Santos</h3>
+            <p>Em parceria com Leandro Fadelli: um mapa dinâmico das territorialidades e lutas dos movimentos sociais da cidade, com conteúdo de estudantes de Serviço Social da UNIFESP em Política Social 2 (2024–2025).</p>
+            <ul class="tags"><li>Mapas</li><li>Movimentos sociais</li></ul>
+            <div class="actions">
+              <a href="https://hericmr.github.io/cartografiasocial">Acessar →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Lindiflix</h3>
+            <p>Vídeos produzidos por estudantes da Licenciatura Intercultural Indígena da UNIFESP (2024): crianças compartilhando seu cotidiano, conhecimentos, brincadeiras e comunidades. Hoje também faz parte do OPIN.</p>
+            <ul class="tags"><li>Vídeo</li><li>Educação indígena</li></ul>
+            <div class="actions">
+              <a href="https://hericmr.github.io/Lindiflix">Assistir →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Concurseira Pobre</h3>
+            <p>Coleção gratuita de questões anteriores da banca AVANÇA-SP, com gabaritos, para estudar para concursos sem custo. Os dados foram obtidos com web scraping em Python.</p>
+            <ul class="tags"><li>Python</li><li>Web scraping</li></ul>
+            <div class="actions">
+              <a href="https://hericmr.github.io/ConcurseiraPobre">Acessar →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Vigilante</h3>
+            <p>Imagens em tempo real das câmeras públicas da Prefeitura de Santos, obtidas pelos endpoints HTTPS disponíveis na internet. Também há uma versão web simples.</p>
+            <ul class="tags"><li>Python</li><li>Dados abertos</li></ul>
+            <div class="actions">
+              <a href="https://hericmr.github.io/cameras">Versão web →</a>
+              <a href="https://github.com/hericmr/El-Vigilante">Código</a>
+            </div>
+          </article>
         </div>
+      </section>
 
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Certificações</h2>
-            <ul class="space-y-4">
-                <li class="text-center">
-                    <a class="text-blue-600 hover:underline font-semibold" href="https://cs50.harvard.edu/certificates/a8bad3df-610c-4d32-9d61-a5ebff587112" target="_blank">
-                        CS50's Introduction to Cybersecurity – Harvard University
-                    </a>
-                    <br>
-                    <small class="text-gray-600">Curso concluído em 2025, abordando fundamentos de segurança digital, criptografia e boas práticas.</small>
-                </li>
-                <li class="text-center">
-                    <a class="text-blue-600 hover:underline font-semibold" href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540" target="_blank">
-                        CS50's Introduction to Programming with Python – Harvard University
-                    </a>
-                    <br>
-                    <small class="text-gray-600">Curso introdutório cobrindo lógica de programação, estruturas de dados e fundamentos da linguagem Python.</small>
-                </li>
-                <li class="text-center">
-                    <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/me/blob/a0959f4524346c3f6ed8423639acfff1986ee33e/imagens/H%C3%A9ric%20Moura.pdf" target="_blank">
-                        Python para Ciência de Dados – Universidade de São Paulo (USP)
-                    </a>
-                    <br>
-                    <small class="text-gray-600">Curso organizado pelo grupo de extensão Data, concluído no 2º semestre de 2024 (40h).</small>
-                </li>
-            </ul>
-        </div>
+      <section>
+        <h2>Artigos</h2>
+        <ul class="list">
+          <li>
+            <strong>Mudanças climáticas: deslizamentos na Baixada Santista e a responsabilidade socioambiental do Estado</strong>
+            <small>Com Leonardo Bernardes Guimarães e Edson Ricardo Saleme · <a href="https://doi.org/10.58422/releo2024.e1603">DOI 10.58422/releo2024.e1603</a></small>
+          </li>
+          <li>
+            <strong>Alienação e automação: o impacto das IAs e do GPT no mundo do trabalho</strong>
+            <small>Revista Contrapoder · <a href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/">Ler</a></small>
+          </li>
+        </ul>
+      </section>
 
-        
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Projetos</h2>
-            <ul class="space-y-4">
-                <li class="text-left">
-                    Em parceria com Leandro Fadelli, desenvolvi a <a class="text-blue-600 hover:underline font-semibold" href="https://hericmr.github.io/cartografiasocial">Cartografia Social de Santos</a>, um mapa dinâmico que cartografa territorialidades e lutas dos movimentos sociais na cidade. O conteúdo foi produzido por estudantes de Serviço Social da UNIFESP nas unidades curriculares de Política Social 2 (2024-2025).
-                </li>
-                <li class="text-left">
-                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://hericmr.github.io/ConcurseiraPobre">Concurseira Pobre</a>, um site gratuito que oferece uma coleção de questões da banca de concurso AVANÇA-SP para auxiliar na preparação de exames de forma eficiente e sem custos. Os usuários podem acessar questões passadas, praticar e estudar com acesso a respostas. O backend foi feito com Python, utilizando web scraping para obter exames passados e os gabaritos da banca.
-                </li>
-                <li class="text-left">
-                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://hericmr.github.io/Lindiflix">Lindiflix</a>, um site que apresenta alguns dos trabalhos produzidos por alunos do Curso de Licenciatura Intercultural Indígena na UNIFESP em 2024. São vídeos de crianças compartilhando seu cotidiano, conhecimentos, brincadeiras e comunidades. É um convite para explorar a diversidade dos povos indígenas de São Paulo.
-                </li>
-                <li class="text-left">
-                    Desenvolvi <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/El-Vigilante">Vigilante</a>, uma aplicação que permite aos usuários visualizar feeds de câmeras em tempo real de locais selecionados em Santos, Brasil. Este aplicativo, desenvolvido em Python, utiliza as câmeras públicas fornecidas pela prefeitura de Santos para uma vigilância virtual. Os dados das câmeras foram obtidos através de requisições HTTPS, aproveitando endpoints disponíveis na internet. A versão simples do site pode ser encontrada em: <a class="text-blue-600 hover:underline" href="https://hericmr.github.io/cameras">https://hericmr.github.io/cameras</a>.
-                </li>
-                <li class="text-left">
-                    E o meu preferido: <a class="text-blue-600 hover:underline font-semibold" href="https://github.com/hericmr/ocaicara">O Caiçara</a>, um jogo de geolocalização ambientado em Santos, SP, onde os jogadores, como Chorão, identificam rapidamente os bairros da cidade. O jogo, desenvolvido em Python usando Pygame, é projetado para fins educacionais e de entretenimento.
-                </li>
-            </ul>
-        </div>
+      <section>
+        <h2>Certificações</h2>
+        <ul class="list">
+          <li>
+            <strong><a href="https://cs50.harvard.edu/certificates/a8bad3df-610c-4d32-9d61-a5ebff587112">CS50's Introduction to Cybersecurity</a></strong>
+            <small>Harvard University · 2025 · Segurança digital, criptografia e boas práticas</small>
+          </li>
+          <li>
+            <strong><a href="https://cs50.harvard.edu/certificates/9537dc35-e94f-4415-b755-8ccbf17f4540">CS50's Introduction to Programming with Python</a></strong>
+            <small>Harvard University · Lógica de programação, estruturas de dados e fundamentos de Python</small>
+          </li>
+          <li>
+            <strong><a href="https://github.com/hericmr/me/blob/a0959f4524346c3f6ed8423639acfff1986ee33e/imagens/H%C3%A9ric%20Moura.pdf">Python para Ciência de Dados</a></strong>
+            <small>Universidade de São Paulo (USP) · Grupo de extensão Data · 2º semestre de 2024 (40h)</small>
+          </li>
+        </ul>
+      </section>
 
-        
+      <section>
+        <h2>Formação</h2>
+        <ul class="list">
+          <li><strong>Graduação em Serviço Social</strong><small>Universidade Federal de São Paulo (UNIFESP), Santos</small></li>
+        </ul>
+      </section>
 
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Universidade</h2>
-            <ul class="space-y-4">
-                <li class="text-center">Graduando em Serviço Social na UNIFESP.</li>
-            </ul>
-        </div>
+      <section>
+        <h2>Ferramentas com as quais trabalhei</h2>
+        <ul class="chips">
+          <li>Python</li><li>React</li><li>Django</li><li>OpenCV</li><li>Pygame</li><li>HTML</li><li>CSS</li><li>GitHub</li>
+        </ul>
+      </section>
+    </main>
 
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Artigos</h2>
-            <ul class="space-y-4">
-                <li class="text-left">
-                    <strong>"Mudanças climáticas: deslizamentos na Baixada Santista e a responsabilidade socioambiental do Estado"</strong>  
-                    – Coautoria com Leonardo Bernardes Guimarães e Edson Ricardo Saleme.  
-                    <a class="text-blue-600 hover:underline" href="https://doi.org/10.58422/releo2024.e1603" target="_blank">DOI: 10.58422/releo2024.e1603</a>
-                </li>
-                <li class="text-left">
-                    <strong>"Alienação e Automação: o impacto das IAs e do GPT no mundo do trabalho"</strong>  
-                    – Publicado na revista Contrapoder.  
-                    <a class="text-blue-600 hover:underline" href="https://contrapoder.net/artigo/alienacao-e-automatizacao-o-impacto-das-ias-e-do-gpt-no-mundo-do-trabalho/" target="_blank">Leia aqui</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="max-w-2xl mx-auto mt-8">
-            <h2 class="text-2xl font-bold mb-4 text-center">Ferramentas com as quais trabalhei:</h2>
-            <ul class="space-y-4">
-                <li class="text-center"> Python</li>
-                <li class="text-center">React</li>
-                <li class="text-center"> Django</li>
-                <li class="text-center"> OpenCV</li>
-                <li class="text-center"> Pygame</li>
-                <li class="text-center"> HTML</li>
-                <li class="text-center"> CSS</li>
-                <li class="text-center"> GitHub</li>
-            </ul>
-        </div>
-
-        <div class="max-w-2xl mx-auto mt-8 text-center">
-            <p class="text-gray-700"> Sinta-se à vontade para entrar em contato comigo em <a class="text-blue-600 hover:underline" href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>.</p>
-        </div>
-    </div>
+    <footer>
+      Contato: <a href="mailto:heric.moura@unifesp.br">heric.moura@unifesp.br</a>
+    </footer>
+  </div>
 </body>
 
 </html>
