@@ -97,6 +97,14 @@ h2 {
 }
 
 .about p { margin: 0 0 14px; font-size: 18px; }
+.about .open { color: var(--accent); font-weight: 500; }
+
+.stack li { display: grid; grid-template-columns: 200px 1fr; gap: 16px; }
+.stack small { font-size: 16px; color: var(--text); }
+
+@media (max-width: 640px) {
+  .stack li { grid-template-columns: 1fr; gap: 2px; }
+}
 
 /* Projetos */
 .featured {
