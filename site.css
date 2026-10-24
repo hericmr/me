@@ -73,8 +73,6 @@ a:hover { text-decoration-thickness: 2px; }
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--surface);
-  box-shadow: var(--shadow);
 }
 
 h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; line-height: 1.2; margin: 0; }
@@ -103,7 +101,6 @@ h2 {
 /* Projetos */
 .featured {
   background: var(--surface);
-  border: 1px solid var(--line);
   border-radius: 16px;
   padding: 28px;
   box-shadow: var(--shadow);
@@ -131,7 +128,6 @@ h2 {
 
 .card {
   background: var(--surface);
-  border: 1px solid var(--line);
   border-radius: 14px;
   padding: 22px;
   display: flex;
