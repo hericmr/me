@@ -129,6 +129,18 @@ h2 {
 }
 
 .featured h3 { font-size: 26px; margin-bottom: 4px; }
+
+/* O logo do OPIN é verde-claro e transparente: precisa do fundo escuro do próprio site */
+.opin-logo {
+  display: block;
+  width: fit-content;
+  background: #052e16;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 12px !important;
+  line-height: 0;
+}
+.opin-logo img { height: 56px; width: auto; }
 .featured .sub { color: var(--muted); margin: 0 0 14px; }
 .featured p { margin: 0 0 14px; }
 
