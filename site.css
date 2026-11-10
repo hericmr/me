@@ -56,20 +56,33 @@ h2 { font-size: 26px; text-align: center; margin-bottom: 18px; }
 
 .about p { margin: 0 0 14px; }
 
-/* Projetos */
-.featured { margin-bottom: 28px; }
+/* Projetos: cartões claros sobre o degradê */
+.featured, .card {
+  background: rgba(255, 255, 255, .62);
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.featured { margin-bottom: 18px; }
 
 .featured h3, .card h3 { font-size: 21px; margin-bottom: 4px; }
 
-/* O logo do OPIN é branco e verde-claro sobre transparente: aqui ele é escurecido para aparecer no fundo claro */
-.opin-logo { margin-bottom: 8px !important; line-height: 0; }
-.opin-logo img { height: 64px; width: auto; filter: brightness(.35); }
+/* O logo do OPIN é branco e verde-claro sobre transparente: aqui ele fica preto para aparecer no fundo claro */
+.opin-logo { margin-bottom: 8px !important; line-height: 0; text-align: center; }
+.opin-logo img { height: 64px; width: auto; filter: brightness(0); }
 
-.featured .sub { color: var(--muted); font-style: italic; margin: 0 0 10px; }
+.featured .sub { color: #000; font-style: italic; text-align: center; margin: 0 0 14px; }
 .featured p, .card p { margin: 0 0 8px; }
 
-.projects { display: block; }
-.card { margin-bottom: 26px; }
+.projects { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.card { display: flex; flex-direction: column; }
+.card p { flex: 1; }
+
+/* No desktop, os projetos ocupam uma faixa mais larga que o texto */
+@media (min-width: 1020px) {
+  .featured, .projects { margin-left: calc(50% - 470px); margin-right: calc(50% - 470px); }
+  .projects { grid-template-columns: repeat(3, 1fr); }
+}
 
 /* Tecnologias como texto corrido, separadas por ponto */
 .tags { margin: 0 0 6px; padding: 0; list-style: none; font-size: 15px; color: var(--muted); }
@@ -97,4 +110,6 @@ footer { text-align: center; padding: 32px 0 48px; color: var(--muted); font-siz
   .hero img { width: 130px; height: 130px; }
   h1 { font-size: 32px; }
   h2 { font-size: 23px; }
+  .projects { grid-template-columns: 1fr; }
+  .featured, .card { padding: 18px; }
 }
