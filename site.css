@@ -12,6 +12,10 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -24,6 +28,13 @@ body {
 
 a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* Links no meio de frases ficam sublinhados de leve, para não depender só da cor */
+p a, small a { text-decoration: underline; text-decoration-color: rgba(29, 95, 214, .35); text-underline-offset: 2px; }
+p a:hover, small a:hover { text-decoration-color: currentColor; }
+
+/* Contorno visível para quem navega pelo teclado */
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; border-radius: 3px; }
 
 .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
 
@@ -50,7 +61,7 @@ h1 { font-size: 38px; margin-top: 14px; }
 .links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; }
 
 /* Seções */
-section { padding: 28px 0 8px; }
+section { padding: 32px 0 8px; scroll-margin-top: 16px; }
 
 h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
 
@@ -78,10 +89,9 @@ h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-b
 .card { display: flex; flex-direction: column; }
 .card p { flex: 1; }
 
-/* No desktop, os projetos ocupam uma faixa mais larga que o texto */
+/* No desktop, os projetos ocupam uma faixa mais larga que o texto; duas colunas mantêm as linhas confortáveis de ler */
 @media (min-width: 1020px) {
-  .featured, .projects, section:has(.projects) h2 { margin-left: calc(50% - 470px); margin-right: calc(50% - 470px); }
-  .projects { grid-template-columns: repeat(3, 1fr); }
+  .featured, .projects, section:has(.projects) h2 { margin-left: calc(50% - 450px); margin-right: calc(50% - 450px); }
 }
 
 /* Tecnologias como texto corrido, separadas por ponto */
@@ -103,7 +113,8 @@ h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-b
 .chips li { display: inline; }
 .chips li + li::before { content: " · "; color: var(--muted); }
 
-footer { text-align: center; padding: 32px 0 48px; color: var(--muted); font-size: 15px; }
+footer { text-align: center; margin-top: 24px; padding: 24px 0 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+footer p { margin: 8px 0 0; }
 
 @media (max-width: 640px) {
   body { font-size: 16px; }
