@@ -52,7 +52,7 @@ h1 { font-size: 38px; margin-top: 14px; }
 /* Seções */
 section { padding: 28px 0 8px; }
 
-h2 { font-size: 26px; text-align: center; margin-bottom: 18px; }
+h2 { font-size: 15px; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 14px; }
 
 .about p { margin: 0 0 14px; }
 
@@ -65,7 +65,7 @@ h2 { font-size: 26px; text-align: center; margin-bottom: 18px; }
 
 .featured { margin-bottom: 18px; }
 
-.featured h3, .card h3 { font-size: 21px; margin-bottom: 4px; }
+.featured h3, .card h3 { font-size: 21px; margin-bottom: 14px; text-align: center; }
 
 /* O logo do OPIN é branco e verde-claro sobre transparente: aqui ele fica preto para aparecer no fundo claro */
 .opin-logo { margin-bottom: 8px !important; line-height: 0; text-align: center; }
@@ -80,7 +80,7 @@ h2 { font-size: 26px; text-align: center; margin-bottom: 18px; }
 
 /* No desktop, os projetos ocupam uma faixa mais larga que o texto */
 @media (min-width: 1020px) {
-  .featured, .projects { margin-left: calc(50% - 470px); margin-right: calc(50% - 470px); }
+  .featured, .projects, section:has(.projects) h2 { margin-left: calc(50% - 470px); margin-right: calc(50% - 470px); }
   .projects { grid-template-columns: repeat(3, 1fr); }
 }
 
@@ -89,7 +89,7 @@ h2 { font-size: 26px; text-align: center; margin-bottom: 18px; }
 .tags li { display: inline; }
 .tags li + li::before { content: " · "; }
 
-.actions { display: flex; flex-wrap: wrap; gap: 4px 18px; font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 18px; font-weight: 500; }
 
 /* Listas */
 .list { list-style: none; margin: 0; padding: 0; }
@@ -109,7 +109,6 @@ footer { text-align: center; padding: 32px 0 48px; color: var(--muted); font-siz
   body { font-size: 16px; }
   .hero img { width: 130px; height: 130px; }
   h1 { font-size: 32px; }
-  h2 { font-size: 23px; }
   .projects { grid-template-columns: 1fr; }
   .featured, .card { padding: 18px; }
 }
